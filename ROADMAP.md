@@ -24,7 +24,7 @@ This document outlines the **8-module learning path** through Object-Oriented Pr
 │  ├─ Reusing code through extends                             │
 │  └─ Method overriding                                         │
 │        ↓                                                        │
-│  Module 4: Polymorphism  .............................. 2 hours  │
+│  Module 4:   .............................. 2 hours  │
 │  ├─ Dynamic dispatch                                          │
 │  ├─ Polymorphic collections                                  │
 │  └─ Runtime behavior variation                               │
@@ -165,7 +165,7 @@ From [java-fundamentals](https://github.com/Bongani-Xhentsa/java-fundamentals):
 
 ---
 
-## Module 4: Polymorphism
+## Module 4: 
 
 ### 🎯 Objectives
 - Understand dynamic dispatch and runtime method resolution
@@ -218,7 +218,7 @@ From [java-fundamentals](https://github.com/Bongani-Xhentsa/java-fundamentals):
 ### 🔗 Prerequisites
 - ✅ Module 1: Classes & Objects
 - ✅ Module 3: Inheritance
-- ✅ Module 4: Polymorphism
+- ✅ Module 4: 
 
 ### 💻 Exercises
 - Comparable interface with custom sorting
@@ -326,7 +326,7 @@ From [java-fundamentals](https://github.com/Bongani-Xhentsa/java-fundamentals):
 ### 💻 Project Ideas
 - **Online Library System**
   - Books, Members, Borrowing system
-  - Uses: Encapsulation, Inheritance, Polymorphism, Interfaces
+  - Uses: Encapsulation, Inheritance, , Interfaces
 
 - **E-commerce Shopping Cart**
   - Products, Cart, Orders, Payments
@@ -334,7 +334,7 @@ From [java-fundamentals](https://github.com/Bongani-Xhentsa/java-fundamentals):
 
 - **Game Character System**
   - Characters, Abilities, Equipment, Leveling
-  - Uses: Inheritance, Polymorphism, Builder pattern
+  - Uses: Inheritance, , Builder pattern
 
 ### ⏱️ Estimated Time: 2 hours (planning + implementation)
 
@@ -356,7 +356,7 @@ From [java-fundamentals](https://github.com/Bongani-Xhentsa/java-fundamentals):
 
 ### Week 2: Hierarchy (Modules 3-5)
 - Days 5-6: Module 3 (Inheritance)
-- Days 7-8: Module 4 (Polymorphism)
+- Days 7-8: Module 4 ()
 - Days 9-10: Module 5 (Interfaces)
 - Consolidate understanding of OOP relationships
 
@@ -389,7 +389,7 @@ Each module references concepts from [java-fundamentals](https://github.com/Bong
 | Classes & Objects | Primitive types, Strings, Method signatures |
 | Encapsulation | Final keyword, Variable scope |
 | Inheritance | Reference types, Type casting |
-| Polymorphism | Type casting, Exception handling |
+|  | Type casting, Exception handling |
 | Interfaces | Method signatures, Type casting |
 | Abstract Classes | Type casting, Scope |
 | Design Patterns | All fundamentals |

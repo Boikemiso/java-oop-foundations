@@ -29,14 +29,45 @@ package com.oop.module1;
  */
 public class BankAccount {
     // TODO: Add fields here
-    
+    String accountNumber;
+    double balance;
+    String owner;
     // TODO: Add constructor here
-    
+    public BankAccount(String accountNumber,String Owner,double initialBalance){
+        this.accountNumber = accountNumber;
+        this.owner = Owner;
+        this.balance = initialBalance;
+    }
     // TODO: Add getter methods here
-    
+    public String getAccountNumber(){
+        return accountNumber;
+    }
+
+    public String getOwner(){
+        return owner;
+    }
+
+    public double getBalance(){
+        return balance;
+    }
     // TODO: Add deposit method here
-    
+    public void deposit(double amount){
+        if(amount <= 0){
+           throw new IllegalArgumentException("Amount cannot be less than zero");
+    }
+        balance += amount;
+    }
     // TODO: Add withdraw method here
+    public void withdraw(double amount){
+        if(amount <= 0 || amount > balance){
+            throw new IllegalArgumentException("Amount cannot be less than zero or greater than balance");
+        }
+        balance -= amount;
+    }
     
     // TODO: Override toString() here
+    @Override
+    public String toString(){
+        return accountNumber + owner + balance;
+    }
 }

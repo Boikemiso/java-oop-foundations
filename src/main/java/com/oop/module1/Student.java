@@ -28,12 +28,41 @@ package com.oop.module1;
  */
 public class Student {
     // TODO: Add fields here
+    String name;
+    String studentId;
+    double gpa;
     
     // TODO: Add constructor here
-    
+    public Student(String name, String studentId, double gpa){
+        this.name = name;
+        this.studentId = studentId;
+        this.gpa = gpa;
+    }
     // TODO: Add getter methods here
-    
+    public String getName(){
+        return name;
+    }
+
+    public String getStudentId(){
+        return studentId;
+    }
+
+    public double getGpa() {
+        return gpa;
+    }
+
     // TODO: Add isHonorStudent method here
-    
+    public boolean isHonorStudent(){
+        if(gpa >= 3.5){
+            return true;
+        }else {
+            return false;
+        }
+    }
     // TODO: Override toString() here
+
+    @Override
+    public String toString() {
+        return "Student{name='" + name + "studentId=," + studentId + "gpa=," + gpa + "isHonorStudent=" + isHonorStudent() + "}";
+    }
 }

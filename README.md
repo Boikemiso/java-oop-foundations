@@ -30,7 +30,7 @@ After completing this homework, you will:
 - ✅ **Classes & Objects** - Design and instantiate classes that model real-world entities
 - ✅ **Encapsulation** - Hide internal details and expose clean public interfaces
 - ✅ **Inheritance** - Build class hierarchies that promote code reuse
-- ✅ **Polymorphism** - Write flexible code that works with objects of multiple types
+- ✅ **** - Write flexible code that works with objects of multiple types
 - ✅ **Interfaces** - Design contracts that multiple classes can implement
 - ✅ **Abstract Classes** - Create templates that guide subclass implementation
 - ✅ **Design Patterns** - Apply proven solutions to common programming problems
@@ -45,7 +45,7 @@ This homework consists of **8 progressive modules**:
 | 1 | **Classes & Objects** | Classes, constructors, object instantiation | 2 hours |
 | 2 | **Encapsulation** | Access modifiers, getters/setters, immutability | 2 hours |
 | 3 | **Inheritance** | extends, super(), method overriding | 2 hours |
-| 4 | **Polymorphism** | Dynamic dispatch, polymorphic collections | 2 hours |
+| 4 | **** | Dynamic dispatch, polymorphic collections | 2 hours |
 | 5 | **Interfaces** | Contracts, multiple implementation | 2 hours |
 | 6 | **Abstract Classes** | Templates, partial implementation | 2 hours |
 | 7 | **Design Patterns** | Singleton, Factory, Builder, Strategy | 2 hours |
@@ -213,7 +213,7 @@ No—test files are read-only. They define the contract you must fulfill.
 - [Java Documentation](https://docs.oracle.com/en/java/)
 - [Classes and Objects](https://docs.oracle.com/javase/tutorial/java/concepts/)
 - [Inheritance](https://docs.oracle.com/javase/tutorial/java/IandI/)
-- [Polymorphism](https://docs.oracle.com/javase/tutorial/java/IandI/polymorphism.html)
+- [](https://docs.oracle.com/javase/tutorial/java/IandI/polymorphism.html)
 - [Interfaces](https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html)
 - [Abstract Classes](https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html)
 - [Design Patterns](https://refactoring.guru/design-patterns/java)

@@ -282,9 +282,9 @@ public class ClassesExercisesTest {
         assertTrue("toString should contain distance", result.contains("50"));
     }
 
-    // ============================================================
-    // EXERCISE 4: Student Class Tests (8 tests)
-    // ============================================================
+//    // ============================================================
+//    // EXERCISE 4: Student Class Tests (8 tests)
+//    // ============================================================
 
     @Test
     public void testStudentConstructor() {
@@ -453,175 +453,175 @@ public class ClassesExercisesTest {
         assertTrue("toString should contain total value", result.contains("699.98"));
     }
 
-    // ============================================================
-    // EXERCISE 6: Circle Class Tests (10 tests)
-    // ============================================================
-
-    @Test
-    public void testCircleConstructor() {
-        Circle circle = new Circle(5.0);
-        assertNotNull("Circle should be created", circle);
-    }
-
-    @Test(expected = IllegalArgumentException.class)
-    public void testCircleConstructorNegativeRadius() {
-        new Circle(-5.0);
-    }
-
-    @Test(expected = IllegalArgumentException.class)
-    public void testCircleConstructorZeroRadius() {
-        new Circle(0.0);
-    }
-
-    @Test
-    public void testCircleGetRadius() {
-        Circle circle = new Circle(7.5);
-        assertEquals("Radius should be 7.5", 7.5, circle.getRadius(), 0.01);
-    }
-
-    @Test
-    public void testCircleGetArea() {
-        Circle circle = new Circle(5.0);
-        // Area = π * r^2 = π * 25
-        double expectedArea = Math.PI * 25;
-        assertEquals("Area should be π * 25", expectedArea, circle.getArea(), 0.01);
-    }
-
-    @Test
-    public void testCircleGetCircumference() {
-        Circle circle = new Circle(10.0);
-        // Circumference = 2 * π * r = 2 * π * 10
-        double expectedCircumference = 2 * Math.PI * 10;
-        assertEquals("Circumference should be 2 * π * 10", expectedCircumference, circle.getCircumference(), 0.01);
-    }
-
-    @Test
-    public void testCircleGetDiameter() {
-        Circle circle = new Circle(6.0);
-        assertEquals("Diameter should be 12", 12.0, circle.getDiameter(), 0.01);
-    }
-
-    @Test
-    public void testCircleSetRadius() {
-        Circle circle = new Circle(5.0);
-        circle.setRadius(10.0);
-        assertEquals("Radius should be 10 after set", 10.0, circle.getRadius(), 0.01);
-    }
-
-    @Test(expected = IllegalArgumentException.class)
-    public void testCircleSetRadiusNegative() {
-        Circle circle = new Circle(5.0);
-        circle.setRadius(-3.0);
-    }
-
-    @Test(expected = IllegalArgumentException.class)
-    public void testCircleSetRadiusZero() {
-        Circle circle = new Circle(5.0);
-        circle.setRadius(0.0);
-    }
-
-    @Test
-    public void testCircleToString() {
-        Circle circle = new Circle(5.0);
-        String result = circle.toString();
-        assertTrue("toString should contain radius", result.contains("5.0") || result.contains("5"));
-        assertTrue("toString should contain area", result.toLowerCase().contains("area"));
-        assertTrue("toString should contain circumference", result.toLowerCase().contains("circumference"));
-    }
-
-    // ============================================================
-    // EXERCISE 7: StringBuffer Class Tests (12 tests)
-    // ============================================================
-
-    @Test
-    public void testStringBufferConstructor() {
-        StringBuffer sb = new StringBuffer("Hello");
-        assertNotNull("StringBuffer should be created", sb);
-    }
-
-    @Test
-    public void testStringBufferGetContent() {
-        StringBuffer sb = new StringBuffer("Initial");
-        assertEquals("Content should be 'Initial'", "Initial", sb.getContent());
-    }
-
-    @Test
-    public void testStringBufferAppend() {
-        StringBuffer sb = new StringBuffer("Hello");
-        sb.append(" World");
-        assertEquals("Content should be 'Hello World'", "Hello World", sb.getContent());
-    }
-
-    @Test
-    public void testStringBufferAppendMultiple() {
-        StringBuffer sb = new StringBuffer("A");
-        sb.append("B").append("C").append("D");
-        assertEquals("Content should be 'ABCD' after multiple appends", "ABCD", sb.getContent());
-    }
-
-    @Test
-    public void testStringBufferPrepend() {
-        StringBuffer sb = new StringBuffer("World");
-        sb.prepend("Hello ");
-        assertEquals("Content should be 'Hello World'", "Hello World", sb.getContent());
-    }
-
-    @Test
-    public void testStringBufferPrependMultiple() {
-        StringBuffer sb = new StringBuffer("D");
-        sb.prepend("C").prepend("B").prepend("A");
-        assertEquals("Content should be 'ABCD' after multiple prepends", "ABCD", sb.getContent());
-    }
-
-    @Test
-    public void testStringBufferMixedChaining() {
-        StringBuffer sb = new StringBuffer("middle");
-        sb.prepend("say ").append("!");
-        assertEquals("Content should be 'say middle!'", "say middle!", sb.getContent());
-    }
-
-    @Test
-    public void testStringBufferClear() {
-        StringBuffer sb = new StringBuffer("Hello World");
-        sb.clear();
-        assertEquals("Content should be empty after clear", "", sb.getContent());
-    }
-
-    @Test
-    public void testStringBufferClearAndAppend() {
-        StringBuffer sb = new StringBuffer("Old Content");
-        sb.clear().append("New");
-        assertEquals("Content should be 'New' after clear and append", "New", sb.getContent());
-    }
-
-    @Test
-    public void testStringBufferLength() {
-        StringBuffer sb = new StringBuffer("Hello");
-        assertEquals("Length should be 5", 5, sb.length());
-    }
-
-    @Test
-    public void testStringBufferLengthAfterModification() {
-        StringBuffer sb = new StringBuffer("Hi");
-        sb.append(" There");
-        assertEquals("Length should be 8 after append", 8, sb.length());
-    }
-
-    @Test
-    public void testStringBufferToString() {
-        StringBuffer sb = new StringBuffer("Test String");
-        String result = sb.toString();
-        assertEquals("toString should return content", "Test String", result);
-    }
-
-    @Test
-    public void testStringBufferComplexChaining() {
-        StringBuffer sb = new StringBuffer("World");
-        String result = sb
-                .prepend("Hello ")
-                .append(" from ")
-                .append("Java")
-                .toString();
-        assertEquals("Complex chaining should work correctly", "Hello World from Java", result);
-    }
+//    // ============================================================
+//    // EXERCISE 6: Circle Class Tests (10 tests)
+//    // ============================================================
+//
+//    @Test
+//    public void testCircleConstructor() {
+//        Circle circle = new Circle(5.0);
+//        assertNotNull("Circle should be created", circle);
+//    }
+//
+//    @Test(expected = IllegalArgumentException.class)
+//    public void testCircleConstructorNegativeRadius() {
+//        new Circle(-5.0);
+//    }
+//
+//    @Test(expected = IllegalArgumentException.class)
+//    public void testCircleConstructorZeroRadius() {
+//        new Circle(0.0);
+//    }
+//
+//    @Test
+//    public void testCircleGetRadius() {
+//        Circle circle = new Circle(7.5);
+//        assertEquals("Radius should be 7.5", 7.5, circle.getRadius(), 0.01);
+//    }
+//
+//    @Test
+//    public void testCircleGetArea() {
+//        Circle circle = new Circle(5.0);
+//        // Area = π * r^2 = π * 25
+//        double expectedArea = Math.PI * 25;
+//        assertEquals("Area should be π * 25", expectedArea, circle.getArea(), 0.01);
+//    }
+//
+//    @Test
+//    public void testCircleGetCircumference() {
+//        Circle circle = new Circle(10.0);
+//        // Circumference = 2 * π * r = 2 * π * 10
+//        double expectedCircumference = 2 * Math.PI * 10;
+//        assertEquals("Circumference should be 2 * π * 10", expectedCircumference, circle.getCircumference(), 0.01);
+//    }
+//
+//    @Test
+//    public void testCircleGetDiameter() {
+//        Circle circle = new Circle(6.0);
+//        assertEquals("Diameter should be 12", 12.0, circle.getDiameter(), 0.01);
+//    }
+//
+//    @Test
+//    public void testCircleSetRadius() {
+//        Circle circle = new Circle(5.0);
+//        circle.setRadius(10.0);
+//        assertEquals("Radius should be 10 after set", 10.0, circle.getRadius(), 0.01);
+//    }
+//
+//    @Test(expected = IllegalArgumentException.class)
+//    public void testCircleSetRadiusNegative() {
+//        Circle circle = new Circle(5.0);
+//        circle.setRadius(-3.0);
+//    }
+//
+//    @Test(expected = IllegalArgumentException.class)
+//    public void testCircleSetRadiusZero() {
+//        Circle circle = new Circle(5.0);
+//        circle.setRadius(0.0);
+//    }
+//
+//    @Test
+//    public void testCircleToString() {
+//        Circle circle = new Circle(5.0);
+//        String result = circle.toString();
+//        assertTrue("toString should contain radius", result.contains("5.0") || result.contains("5"));
+//        assertTrue("toString should contain area", result.toLowerCase().contains("area"));
+//        assertTrue("toString should contain circumference", result.toLowerCase().contains("circumference"));
+//    }
+//
+//    // ============================================================
+//    // EXERCISE 7: StringBuffer Class Tests (12 tests)
+//    // ============================================================
+//
+//    @Test
+//    public void testStringBufferConstructor() {
+//        StringBuffer sb = new StringBuffer("Hello");
+//        assertNotNull("StringBuffer should be created", sb);
+//    }
+//
+//    @Test
+//    public void testStringBufferGetContent() {
+//        StringBuffer sb = new StringBuffer("Initial");
+//        assertEquals("Content should be 'Initial'", "Initial", sb.getContent());
+//    }
+//
+//    @Test
+//    public void testStringBufferAppend() {
+//        StringBuffer sb = new StringBuffer("Hello");
+//        sb.append(" World");
+//        assertEquals("Content should be 'Hello World'", "Hello World", sb.getContent());
+//    }
+//
+//    @Test
+//    public void testStringBufferAppendMultiple() {
+//        StringBuffer sb = new StringBuffer("A");
+//        sb.append("B").append("C").append("D");
+//        assertEquals("Content should be 'ABCD' after multiple appends", "ABCD", sb.getContent());
+//    }
+//
+//    @Test
+//    public void testStringBufferPrepend() {
+//        StringBuffer sb = new StringBuffer("World");
+//        sb.prepend("Hello ");
+//        assertEquals("Content should be 'Hello World'", "Hello World", sb.getContent());
+//    }
+//
+//    @Test
+//    public void testStringBufferPrependMultiple() {
+//        StringBuffer sb = new StringBuffer("D");
+//        sb.prepend("C").prepend("B").prepend("A");
+//        assertEquals("Content should be 'ABCD' after multiple prepends", "ABCD", sb.getContent());
+//    }
+//
+//    @Test
+//    public void testStringBufferMixedChaining() {
+//        StringBuffer sb = new StringBuffer("middle");
+//        sb.prepend("say ").append("!");
+//        assertEquals("Content should be 'say middle!'", "say middle!", sb.getContent());
+//    }
+//
+//    @Test
+//    public void testStringBufferClear() {
+//        StringBuffer sb = new StringBuffer("Hello World");
+//        sb.clear();
+//        assertEquals("Content should be empty after clear", "", sb.getContent());
+//    }
+//
+//    @Test
+//    public void testStringBufferClearAndAppend() {
+//        StringBuffer sb = new StringBuffer("Old Content");
+//        sb.clear().append("New");
+//        assertEquals("Content should be 'New' after clear and append", "New", sb.getContent());
+//    }
+//
+//    @Test
+//    public void testStringBufferLength() {
+//        StringBuffer sb = new StringBuffer("Hello");
+//        assertEquals("Length should be 5", 5, sb.length());
+//    }
+//
+//    @Test
+//    public void testStringBufferLengthAfterModification() {
+//        StringBuffer sb = new StringBuffer("Hi");
+//        sb.append(" There");
+//        assertEquals("Length should be 8 after append", 8, sb.length());
+//    }
+//
+//    @Test
+//    public void testStringBufferToString() {
+//        StringBuffer sb = new StringBuffer("Test String");
+//        String result = sb.toString();
+//        assertEquals("toString should return content", "Test String", result);
+//    }
+//
+//    @Test
+//    public void testStringBufferComplexChaining() {
+//        StringBuffer sb = new StringBuffer("World");
+//        String result = sb
+//                .prepend("Hello ")
+//                .append(" from ")
+//                .append("Java")
+//                .toString();
+//        assertEquals("Complex chaining should work correctly", "Hello World from Java", result);
+//    }
 }

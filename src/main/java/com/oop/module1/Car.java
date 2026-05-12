@@ -37,14 +37,55 @@ package com.oop.module1;
  */
 public class Car {
     // TODO: Add fields here
-    
+    String make;
+    String model;
+    double fuelTankCapacity;
+    double currentFuel;
+    double distanceTravelled;
     // TODO: Add constructor here
-    
+    public Car(String make, String model, double currentFuel){
+        //Bubble sort is about scapegoats
+        this.fuelTankCapacity = currentFuel;
+        this.distanceTravelled =  0;
+        this.make = make;
+        this.model = model;
+        this.currentFuel = fuelTankCapacity;
+    }
     // TODO: Add getter methods here
-    
+    public String getMake(){
+        return make;
+    }
+
+    public String getModel(){
+        return model;
+    }
+
+    public double getCurrentFuel(){
+        return currentFuel;
+    }
+
+    public double getDistanceTraveled() {
+        return distanceTravelled;
+    }
     // TODO: Add drive method here
-    
+    public void drive(double distance){
+        if(distance <= 0){
+            throw new IllegalArgumentException("");
+        }
+        double fuelConsumed = distance * 0.1;
+        if(currentFuel < fuelConsumed){
+            throw new IllegalStateException("Not enough fuel to drive the distance");
+        }
+        currentFuel -= fuelConsumed;
+        distanceTravelled += distance;
+    }
     // TODO: Add refuel method here
+    public void refuel(){
+        currentFuel = fuelTankCapacity;
+    }
     
     // TODO: Override toString() here
+    public String toString(){
+        return make + model + currentFuel + distanceTravelled;
+    }
 }

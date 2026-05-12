@@ -27,10 +27,33 @@ package com.oop.module1;
  */
 public class Person {
     // TODO: Add fields here
-    
+    String name;
+    int age;
+    String email;
     // TODO: Add constructor here
-    
+    public Person(String name, int age, String email){
+        //Refers to the class fields
+        //Without this it refers to the parameters
+        this.name = name;
+        this.age = age;
+        this.email = email;
+    }
     // TODO: Add getter methods here
-    
+    public String getName(){
+        return name;
+    }
+
+    public int getAge(){
+        return age;
+    }
+
+    public String getEmail(){
+        return email;
+    }
     // TODO: Override toString() here
+    @Override
+    public String toString() {
+        return "Person{name="+""+"'"+name+"', "+ "age="+age+", "+"email="+"'"+ email+"'}";
+    }
+
 }
