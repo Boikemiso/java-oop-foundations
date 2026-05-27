@@ -1,5 +1,7 @@
 package com.oop.module1;
 
+import com.oop.module2.EncapsulationExercises;
+
 /**
  * Exercise 4: Student Class
  *
@@ -26,7 +28,7 @@ package com.oop.module1;
  * - Include computed properties in toString()
  * - Understand that methods can return different types (boolean, String, double)
  */
-public class Student {
+public class Student extends EncapsulationExercises {
     // TODO: Add fields here
     String name;
     String studentId;
@@ -64,5 +66,21 @@ public class Student {
     @Override
     public String toString() {
         return "Student{name='" + name + "studentId=," + studentId + "gpa=," + gpa + "isHonorStudent=" + isHonorStudent() + "}";
+    }
+
+    public Student(){
+
+    }
+
+    public static void main (String [] args){
+        Student student = new Student( "John", "5590", 4.5);
+        EncapsulationExercises exercises = new EncapsulationExercises(90);
+        EncapsulationExercises object1 = new EncapsulationExercises(85, 36, 33);
+
+        //Student object2 = new EncapsulationExercises(8, 56, 34);
+        //A big class cannot be type casted
+        EncapsulationExercises object3 = new Student("John", "56", 34);
+
+        new Student()
     }
 }
