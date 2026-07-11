@@ -23,18 +23,52 @@ package com.oop.module3;
  * - Represent real-world differences using method overriding
  * - Preserve a consistent API while adding unique subtype actions
  */
-public class Bird {
+public class Bird extends Animal{
     // TODO: Make this class extend Animal
 
     // TODO: Add fields here
+    double wingspan;
 
     // TODO: Add constructor here
-
+    public Bird(){
+        super("Zeus", 3);
+    }
+    public Bird(String name, int age, double wingspan){
+        super(name, age);
+        this.wingspan = wingspan;
+    }
     // TODO: Add getter methods here
 
+
+    //Don't need as bird inherits from Animal
+//    public String getName(){
+//        return super.getName();
+//    }
+//
+//    public int getAge(){
+//        return super.getAge();
+//    }
+
+    public double getWingspan() {
+        return wingspan;
+    }
+
     // TODO: Override inherited abstract methods here
-
+    @Override
+    public String makeSound(){
+        return "Chirp";
+    }
+    @Override
+    public String move(){
+        return "Fly up";
+    }
     // TODO: Add Bird-specific methods here
-
+    public String fly(){
+        return "Fly";
+    }
     // TODO: Override toString() here
+    @Override
+    public String toString(){
+        return "Bird{name='" + name + "', age=" + age + ", wingspan=" + wingspan + "}";
+    }
 }

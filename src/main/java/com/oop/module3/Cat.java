@@ -23,18 +23,50 @@ package com.oop.module3;
  * - Override shared contracts differently in each subclass
  * - Keep shared logic in the parent while customizing behavior
  */
-public class Cat {
+public class Cat extends Animal{
     // TODO: Make this class extend Animal
 
     // TODO: Add fields here
-
+    boolean indoor;
     // TODO: Add constructor here
-
+    public Cat(){
+        super("Zuri", 13);
+    }
+    public Cat(String name, int age, boolean indoor){
+        super(name, age);
+        this.indoor = indoor;
+    }
     // TODO: Add getter methods here
+    public boolean isIndoor(){
+        return indoor;
+    }
 
+    //Don't need as cat inherits from Animal
+//    public String getName(){
+//        return super.getName();
+//    }
+//
+//    public int getAge(){
+//        return super.getAge();
+//    }
+    
     // TODO: Override inherited abstract methods here
+    @Override
+    public String makeSound(){
+        return "Meow";
+    }
 
+    @Override
+    public String move(){
+        return "Pounces to the left";
+    }
     // TODO: Add Cat-specific methods here
-
+    public String scratch(){
+        return "Scratches chairs";
+    }
     // TODO: Override toString() here
+    @Override
+    public String toString(){
+        return "Cat{name='" + name + "',age=" + age + ",indoor=" + indoor + "}";
+    }
 }

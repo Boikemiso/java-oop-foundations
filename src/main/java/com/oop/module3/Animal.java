@@ -26,12 +26,27 @@ package com.oop.module3;
  */
 public abstract class Animal {
     // TODO: Add fields here
-
+    String name;
+    int age;
     // TODO: Add constructor here
-
+    public Animal(String name, int age){
+        this.name = name;
+        this.age = age;
+    }
     // TODO: Add getter methods here
+    public String getName(){
+        return name;
+    }
 
+    public int getAge(){
+        return age;
+    }
     // TODO: Add abstract methods here
-
+    public abstract String makeSound();
+    public abstract String move();
     // TODO: Override toString() here
+    @Override
+    public String toString(){
+        return "Animal{name='" + name + "', age=" + age + "}";
+    }
 }

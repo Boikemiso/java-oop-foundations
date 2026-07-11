@@ -55,9 +55,6 @@ public class EncapsulationExercises {
         //this.id = id;
     }
 
-    public EncapsulationExercises (){
-
-    }
     //package
     //imports
     //class definitions

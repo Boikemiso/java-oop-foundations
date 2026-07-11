@@ -26,14 +26,48 @@ package com.oop.module3;
  */
 public class Vehicle {
     // TODO: Add fields here
-
+    String brand;
+    double speed;
+    String type;
     // TODO: Add constructor here
-
+    public Vehicle(String brand, double speed){
+        this.brand = brand;
+        this.speed = speed;
+    }
     // TODO: Add getter methods here
+    public String getBrand(){
+        return brand;
+    }
 
+    public double getSpeed(){
+        return speed;
+    }
     // TODO: Add shared behavior methods here
+    public void accelerate(double amount){
+        if(amount >= 0){
+            speed += amount;
+        }
+    }
 
+    public void brake(double amount){
+        if(amount < 0){
+            throw new IllegalArgumentException("Amount is less than zero");
+        }
+        speed -= amount;
+
+        //This is called clamping
+        if(speed < 0){
+            //set it back to zero
+            speed = 0;
+        }
+    }
     // TODO: Add method designed for overriding (getType)
-
+    public String getType(){
+        return type;
+    }
     // TODO: Override toString() here
+    @Override
+    public String toString(){
+        return "Vehicle{brand='" + brand + "', speed=" + speed + ", type='" + type + "'}";
+    }
 }

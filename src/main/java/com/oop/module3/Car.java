@@ -22,18 +22,32 @@ package com.oop.module3;
  * - Add specialization data to a subtype
  * - Combine inherited and custom behavior in one class
  */
-public class Car {
+public class Car extends Vehicle {
     // TODO: Make this class extend Vehicle
 
     // TODO: Add fields here
-
+    int numberOfDoors;
     // TODO: Add constructor here
-
+    public Car(String brand, double speed, int numberOfDoors){
+        super(brand, speed);
+        this.numberOfDoors = numberOfDoors;
+    }
     // TODO: Add getter methods here
-
+    public int getNumberOfDoors(){
+        return numberOfDoors;
+    }
     // TODO: Override parent methods here
-
+    @Override
+    public String getType(){
+        return "Car";
+    }
     // TODO: Add Car-specific methods here
-
+    public String honk(){
+        return "Beep";
+    }
     // TODO: Override toString() here
+    @Override
+    public String toString(){
+        return "Car{brand='" + brand + "', speed=" + speed + ", number of doors=" + numberOfDoors + "}";
+    }
 }

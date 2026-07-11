@@ -29,6 +29,7 @@ package com.oop.module1;
  */
 public class BankAccount {
     // TODO: Add fields here
+    //Fields are needed so that they can be called for methods and constructors
     String accountNumber;
     double balance;
     String owner;
